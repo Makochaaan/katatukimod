@@ -2,10 +2,19 @@
 //Items
 item.ruby.name=Ruby
 item.obsidian_ingot.name=Obsidian Ingot
+item.excalibur.name=Excalibur
+item.excalibur_air.name=Excalibur Air
+item.excalibur_molgan.name=Excalibur Molgan
+item.excalibur_sheath.name=Excalibur Sheath
+item.gae_bolg.name=Gae Bolg
+item.holy_grail.name=Holy Grail
 
 //Blocks
 tile.ruby_block.name=Block of Ruby
 tile.ruby_ore.name=Ruby Ore
+tile.church_bench_right=Church Bench(R)
+tile.church_bench_center=Church Bench(C)
+tile.church_bench_left=Church Bench(L)
 
 //Tools
 item.ruby_sword.name=Ruby Sword
@@ -13,6 +22,7 @@ item.ruby_shovel.name=Ruby Shovel
 item.ruby_pickaxe.name=Ruby Pickaxe
 item.ruby_axe.name=Ruby Axe
 item.ruby_hoe.name=Ruby Hoe
+item.kokken.name=Kokken
 
 //Armor
 item.ruby_helmet.name=Ruby Helmet

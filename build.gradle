@@ -7,7 +7,7 @@ group = 'com'
 version = '1.0-SNAPSHOT'
 
 java {
-    archivesBaseName = 'loremaster'
+    archivesBaseName = 'katatukimod'
     toolchain.languageVersion = JavaLanguageVersion.of(8)
 }
 
@@ -50,7 +50,7 @@ minecraft {
 
 
             mods {
-                loremaster {
+                katatukimod {
                     source sourceSets.main
                 }
             }
@@ -65,7 +65,7 @@ minecraft {
 
 
             mods {
-                loremaster {
+                katatukimod {
                     source sourceSets.main
                 }
             }
@@ -109,12 +109,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-                "Specification-Title"     : "loremaster",
-                //"Specification-Vendor": "loremaster authors",
+                "Specification-Title"     : "katatukimod",
+                //"Specification-Vendor": "katatukimod authors",
                 "Specification-Version"   : "1", // We are version 1 of ourselves
                 "Implementation-Title"    : project.name,
                 "Implementation-Version"  : project.jar.archiveVersion,
-                //"Implementation-Vendor": "loremaster authors",
+                //"Implementation-Vendor": "katatukimod authors",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
@@ -124,4 +124,11 @@ jar.finalizedBy('reobfJar')
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+}
+tasks.withType(Tar){
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.withType(Zip){
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
